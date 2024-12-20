@@ -13,4 +13,7 @@ jobs:
           name: 'Brown'
       # Use the output from the `hello` step
       - name: Get the Output
-        run: echo "The time was ${{ steps.hello.outputs.greeting }}."
+        run: echo "The time was ${{ steps.hello.outputs.greeting }}"
+      - name: Run Powershell Module
+        shell: pwsh
+        run: write-host "The time was ${{ steps.hello.outputs.greeting }} using Powershell"
