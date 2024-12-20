@@ -22,3 +22,4 @@ jobs:
           get-location
           write-output "listing current directory ..."
           get-childitem ..\\
+          get-childitem /home/runner/work/Github-Examples
