@@ -18,5 +18,7 @@ jobs:
         shell: pwsh
         run: |
           write-host "The time was ${{ steps.hello.outputs.greeting }}"
-          pwd
+          write-output "printing current working directory ..."
+          get-location
+          write-output "listing current directory ..."
           ls -lrt
