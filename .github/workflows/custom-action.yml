@@ -16,4 +16,7 @@ jobs:
         run: echo "The time was ${{ steps.hello.outputs.greeting }}"
       - name: Run Powershell Inline
         shell: pwsh
-        run: write-host "The time was ${{ steps.hello.outputs.greeting }}"
+        run: |
+          write-host "The time was ${{ steps.hello.outputs.greeting }}"
+          pwd
+          ls -lrt
