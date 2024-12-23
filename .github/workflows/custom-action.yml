@@ -21,4 +21,4 @@ jobs:
           write-output "printing current working directory ..."
           get-location
           write-output "listing current directory ..."
-          dir ../
+          dir ../../
