@@ -21,4 +21,4 @@ jobs:
           write-output "printing current working directory ..."
           get-location
           write-output "listing current directory ..."
-          ls /home/runner/work/Github-Examples
+          tree /home/runner/work/Github-Examples
