@@ -21,4 +21,4 @@ jobs:
           write-output "printing current working directory ..."
           get-location
           write-output "listing current directory ..."
-          get-childitem /home/runner/work/ -depth 1 | ft
+          get-childitem /home/runner/work/Github-Examples -depth 1 | ft
